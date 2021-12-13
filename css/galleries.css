@@ -1,0 +1,150 @@
+@import "./main.css";
+
+/* ------------------------------- sub navbar ------------------------------- */
+:root {
+  --dark-blue-purple: #029775;
+  --purple: #d7ffe4;
+}
+h1{
+  padding: 45px 0;
+}
+.main_div{
+  overflow: hidden;
+}
+.top_section{
+  position: relative;
+  width: 300px;
+  margin: 5rem auto;
+}
+.top_section img {
+  position: absolute;
+  width: 200px;
+  top: -3em;
+  z-index: 0;
+}
+.first_img {
+  right: -6em;
+}
+.second_img {
+  left: -6em;
+}
+.subNav {
+  display: block;
+  margin: auto;
+  border-top: solid 2px var(--dark-green);
+  border-bottom: solid 2px var(--dark-green);
+  width: 300px;
+  background-color: #fff;
+  position: relative;
+  z-index: inherit;
+}
+.subNav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0;
+  margin: auto;
+}
+.subNav li {
+  margin: 0 10px;
+  list-style-type: none;
+  padding: 0 10px;
+}
+.subNav a {
+  color: var(--dark-green);
+  font-family: var(--subtitle-fonts);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.subNav a:hover {
+  color: var(--golden-color);
+  border-bottom-width: 1px;
+  border-bottom: 1px solid var(--dark-brown);
+}
+.nav-menu a {
+  color: var(--dark-green);
+}
+.gallery_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  margin: 60px auto;
+}
+a.card {
+  margin: 10px;
+  text-decoration: none;
+  width: 250px;
+}
+a.card:hover{
+  background-color: unset;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card h2:hover{
+  color: var(--golden-color);
+  background-color: unset;
+}
+h2 {
+  text-align: center;
+  color: var(--dark-green);
+  padding-bottom: 10px;
+}
+.frame {
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (min-width: 768px) {
+  .subNav ul {
+    display: flex;
+    justify-content: center;
+  }
+  .subNav {
+    display: block;
+    margin: auto;
+    width: 550px;
+  }
+  ul {
+    width: 550px;
+  }
+  .top_section img {
+    top: -6em;
+  }
+  .first_img {
+    right: -16em;
+  }
+  .second_img {
+    left: -16em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .subNav {
+    width: 700px;
+  }
+  ul {
+    width: 700px;
+  }
+  .subNav li {
+    display: inline;
+    margin: 10px 0;
+    list-style-type: none;
+  }
+  section.galleries_posts {
+    width: 900px;
+    display: block;
+    margin: auto;
+  }
+  .first_img {
+    right: -19em;
+  }
+  .second_img {
+    left: -19em;
+  }
+  .gallery_content{
+    width: 1000px;
+  }
+}

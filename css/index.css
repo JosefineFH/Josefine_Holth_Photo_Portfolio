@@ -1,0 +1,129 @@
+@import url("/css/components/menu.css");
+@import url("/css/components/slideshow.css");
+@import url("/css/components/footer.css");
+header {
+  height: 35rem;
+}
+
+.portfolioImage {
+  height: 218px;
+  transform: skew(-7deg) rotate(-3deg);
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  margin: auto;
+  display: block;
+}
+.portfolio_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-green);
+  transform: skew(-2deg) rotate(-2deg);
+  padding: 0;
+}
+.portfolio_div li {
+  padding: 10px 0;
+}
+.image_container_portfolio {
+  background-image: url("https://josefineholth.one/photographer-josefineholth/wp-content/uploads/sites/2/2021/11/fall_01.jpg");
+  background-size: cover;
+  height: 35rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.portfolio_links {
+  transform: skew(2deg) rotate(2deg);
+}
+.portfolio_links a:hover{
+  color: var(--golden-color);
+}
+.portfolio_links ul {
+    display: grid;
+    justify-content: center;
+    list-style: none;
+    justify-items: center;
+}
+h2 {
+  text-align: center;
+  color: var(--dark-green);
+}
+.about_me_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.about_me_content img{
+  width: 300px;
+  padding: 20px;
+}
+.about_me_content div > p {
+  max-width: 500px;
+  padding: 10px 30px;
+  color: var(--dark-green);
+  text-align: center;
+}
+.top_content {
+  padding: 50px 10px;
+  text-align: center;
+  max-width: 1000px;
+  margin: auto;
+}
+.top_content h2 {
+  color: var(--light-green);
+  text-transform: uppercase;
+}
+.box_container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-gap: 10px;
+  margin: 2rem 0;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top_content  p {
+  padding: 20px 0;
+  color: var(--light-green);
+}
+
+@media screen and (min-width: 768px) {
+  .box_container {
+    grid-template-columns: 200px 200px 200px;
+  }
+  .box{
+    height: 200px;
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box_container {
+    grid-template-columns: 250px 250px 250px;
+  }
+  .box{
+    height: 250px;
+    width: 250px;
+  }
+  .about_me_content {
+    width: 1024px;
+    margin: auto;
+    margin-bottom: -3rem;
+    flex-direction: row;
+  }
+  .about_me_content img {
+  padding: 0;
+  width: 97%;
+  }
+  .about_me_content div > p {
+  width: 512px;
+  }
+}

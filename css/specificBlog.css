@@ -1,0 +1,66 @@
+@import "./main.css";
+
+main {
+  margin: 10px;
+}
+figure img {
+  width: inherit;
+  height: initial;
+}
+figure {
+  width: 100%;
+}
+
+h1 {
+  padding: 70px 0;
+}
+.blog_content p {
+  margin: 30px 0;
+}
+.go_back_link a{
+  font-size: 27px;
+}
+@media only screen and (min-width: 760px) {
+  li.blocks-gallery-item {
+    width: 300px;
+    padding: 10px;
+}
+  main {
+    width: 700px;
+    margin: auto;
+  }
+  .wp-block-gallery {
+    display: block;
+    margin: auto;
+    /* column-count: 2; */
+  }
+  .blocks-gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  main {
+    width: 800px;
+    margin: auto;
+  }
+  .wp-block-image img {
+    width: 700px;
+    display: block;
+    margin: 20px auto;
+}
+  li.blocks-gallery-item {
+    width: 400px;
+    padding: 10px;
+}
+}
+.has-green-background-color {
+  background-color: #d1e4dd;
+  padding: 10px 20px;
+}
+
+.has-text-align-center {
+  text-align: center;
+}

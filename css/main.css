@@ -1,0 +1,203 @@
+@import url("/css/components/menu.css");
+@import url("/css/components/footer.css");
+
+@import url("components/latestPostCarousel.css");
+@import url("https://fonts.googleapis.com/css2?family=Unna&display=swap");
+@font-face {
+  font-family: "NT Josefine";
+  src: url("/fonts/NTJosefine.otf");
+}
+@font-face {
+  font-family: "Roxborough";
+  src: url("/fonts/Roxborough\ CF.ttf");
+}
+@font-face {
+  font-family: "Neuzeit Grotesk Regular";
+  src: url("/fonts/Neuzeit\ Grotesk\ W01\ Regular.otf");
+}
+
+:root {
+  /* fonts */
+  --title-fonts: "NT Josefine", sans-serif;
+  --subtitle-fonts: "Roxborough", sans-serif;
+  --body-font: "Neuzeit Grotesk Regulara", serif;
+  --new-body-font: "Circular Pro";
+
+  /* color */
+  --wheat-color: #eee8d2;
+  --light-green: #e4ebe0;
+  --dark-green: #0d4e37;
+  --gray: #ccd1cf;
+  --hover-color: #eb3e1b;
+  --dark-brown: #bea28c;
+  --golden-color: #a68747;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #272525;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  scroll-behavior: smooth;
+}
+.main_section {
+  margin-top: 4em;
+}
+
+h1 {
+  font-family: var(--title-fonts);
+  color: var(--dark-green);
+  font-size: 4em;
+  text-align: center;
+}
+h2 {
+  font-family: var(--subtitle-fonts);
+  color: var(--dark-green);
+  font-weight: 100;
+  /* font-size: 40px; */
+}
+li,
+p,
+label,
+input,
+select,
+figcaption {
+  font-family: "Neuzeit Grotesk Regular", sans-serif;
+  color: var(--dark-green);
+  font-weight: 400;
+  font-size: large;
+}
+figcaption{
+  text-align: center;
+}
+.blog_content li {
+  list-style: none;
+}
+a {
+  color: var(--dark-green);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--golden-color);
+}
+
+button,
+.link_button {
+  background-color: var(--dark-green);
+  color: #fff;
+  width: 250px;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  font-family: var(--subtitle-fonts);
+  text-transform: uppercase;
+}
+
+.light_text {
+  color: var(--light-green);
+}
+.center_object {
+  display: block;
+  margin: auto;
+}
+.error,
+.message_section {
+  color: darkred;
+  background-color: #d8cbcb;
+  display: none;
+}
+.success {
+  color: var(--dark-green);
+  background-color: #fff;
+}
+.message_section {
+  text-align: center;
+}
+.section_content {
+  margin: 0 2rem;
+}
+.about_me p{
+  padding: 10px 20px;
+}
+.about_me_section img {
+  max-width: 300px;
+  height: auto;
+  padding: 20px;
+}
+.link_button {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.link_button:hover {
+  background-color: var(--golden-color);
+  color: var(--light-green);
+}
+.about_me_section {
+  margin: 0 30px;
+}
+.price_info{
+  margin: 40px 20px;
+}
+.price_info p {
+  padding: 10px 0;
+}
+.price_info section{
+  padding: 20px 0;
+}
+.price_info h2{
+  font-weight: bolder;
+}
+/* --------------------------- testimonial section -------------------------- */
+img.post_feature_img.center_object{
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+}
+.testimonial {
+  max-width: 1000px;
+  margin: auto !important;
+}
+.testimonial p{
+  padding-top: 20px;
+}
+.testimonial > .post_card{
+  height: unset;
+  margin: 20px;
+}
+.testimonial > .post_card:hover{
+  box-shadow: unset;
+}
+@media screen and (min-width: 768px) {
+  .about_me_section  img {
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  .about_me_section  {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .about_me_section  img {
+    max-width: 500px;
+    height: auto;
+    padding: unset;
+}
+  .button_section {
+    padding: 30px 0;
+    display: block;
+    margin: auto;
+  }
+  .price_info{
+    width: 1000px;
+    margin: 40px auto;
+  }
+}

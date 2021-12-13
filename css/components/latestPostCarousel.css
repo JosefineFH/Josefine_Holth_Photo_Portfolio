@@ -22,8 +22,8 @@
   padding: 10px;
 }
 .post_card hr {
-  width: 50%;
-  border: 1px solid black;
+  width: 100%;
+  border: 1px solid #0d4e37c7;
 }
 .post_text {
   margin-top: 10px;

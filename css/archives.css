@@ -1,0 +1,71 @@
+@import url('/css/components/menu.css');
+@import url('/css/components/footer.css');
+@import url('/css/main.css');
+
+.blog_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.searchBareSection{
+    text-align: center;
+}
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+button, .link_button {
+    background-color: unset;
+    color: unset;
+    width: unset;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    font-family: var(--subtitle-fonts);
+    text-transform: uppercase;
+}
+.searchBar input[type="text"]{
+    width: 200px;
+}
+.category_list{
+    border-bottom: var(--golden-color)  2px solid;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+.category_list ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        list-style: none;
+        text-transform: uppercase;
+}
+.category_list li:not(:last-of-type):after {
+    padding: 5px 10px;
+    content: " |";
+}
+.category_list li{
+    cursor: pointer;
+}
+.category_list li:hover{
+    color: var(--golden-color);
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+    .category_list{
+        width: 600px;
+    }
+}
+@media screen and (min-width: 1026px) {
+    .category_list{
+        width: 900px;
+        margin-bottom: 50px;
+    }
+    .blog_list{
+        width: 1000px;
+        margin: auto;
+    }
+}
